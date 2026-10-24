@@ -1,4 +1,4 @@
-ame: Test and deploy to GitHub Pages
+name: Test and deploy to GitHub Pages
 on:
   push:
     branches: [main]
