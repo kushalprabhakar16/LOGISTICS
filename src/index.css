@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { color-scheme: dark; }
+body { margin: 0; color: #f5f7ff; font-family: ui-sans-serif, system-ui, 'Segoe UI', Roboto, sans-serif;
+  background: radial-gradient(900px 500px at 8% -10%, rgba(124,58,237,.35), transparent 60%),
+              radial-gradient(800px 500px at 100% 0%, rgba(34,211,238,.20), transparent 60%), #050816; min-height: 100vh; }
+.glass { background: rgba(15,23,60,.55); border: 1px solid rgba(148,163,255,.18); backdrop-filter: blur(14px); border-radius: 16px; }
+.btn { display:inline-flex; align-items:center; gap:.4rem; padding:.5rem .9rem; border-radius:10px; font-weight:600; font-size:.875rem;
+  background: linear-gradient(90deg,#2563eb,#7c3aed); box-shadow: 0 0 18px rgba(124,58,237,.35); transition: filter .15s, transform .15s; }
+.btn:hover { filter: brightness(1.15); } .btn:disabled { opacity:.45; cursor:not-allowed; }
+.btn-ghost { background: rgba(148,163,255,.12); box-shadow:none; }
+.inp { width:100%; background: rgba(5,8,22,.7); border:1px solid rgba(148,163,255,.25); border-radius:10px; padding:.5rem .7rem; color:#fff; font-size:.875rem; }
+.inp::placeholder { color:#8d98c9; }
+.lbl { display:block; font-size:.75rem; color:#b7c0ee; margin-bottom:.25rem; }
+:focus-visible { outline: 2px solid #22d3ee; outline-offset: 2px; }
+.rim { background: linear-gradient(120deg,#22d3ee,#7c3aed,#d946ef,#22d3ee); background-size:300% 300%; animation: rim 8s linear infinite; padding:1px; border-radius:17px; }
+@keyframes rim { to { background-position: 300% 0; } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
